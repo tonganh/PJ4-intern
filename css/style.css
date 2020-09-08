@@ -1,0 +1,41 @@
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  /* border: 1px solid black; */
+}
+table {
+  border-collapse: collapse;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.user-display {
+  display: inline-block;
+  height: 40px;
+  margin: 40px;
+  border-radius: 7px;
+}
+td i {
+  margin-right: 30px;
+}
+i:hover {
+  cursor: pointer;
+}
+.btn-add {
+  float: right;
+  margin-bottom: 30px;
+}
+.add-display div {
+  margin: 30px;
+}
+.add-display > div p {
+  margin-right: 15px;
+}
+.add-display > div div {
+  position: relative;
+  display: flex;
+}

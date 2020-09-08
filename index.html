@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ee02eb8fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <script></script>
+    <title>TNA</title>
+  </head>
+
+  <body>
+    <h2 class="text-center" style="margin: 40px">Bài tập 4</h2>
+    <div class="wrapper" style="display: flex">
+      <button class="user-display">Users</button>
+      <div class="container">
+        <table style="display: none" class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>User Name</th>
+              <th>Email</th>
+              <th>Add/Remove</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button
+          class="btn-add btn btn-primary"
+          id="add-Button"
+          style="display: none"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+    <script>
+      //   window.location.reload();
+      $(".user-display")
+        .first()
+        .click(function () {
+          $("table, .btn-add").fadeToggle("slow", "linear");
+        });
+      var addAction = document.getElementById("add-Button");
+      addAction.addEventListener("click", function () {
+        window.location.href = "/add.html";
+      });
+    </script>
+  </body>
+</html>
